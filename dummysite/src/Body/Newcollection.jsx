@@ -8,7 +8,7 @@ const Newcollection = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/products/getdetail');
+      const response = await axios.get('https://full-stackproject-wk3s.onrender.com/api/products/getdetail');
       console.log(response.data); // Inspect API response structure
       setProducts(response.data.data || []); // Extract the array from `data` property
     } catch (err) {

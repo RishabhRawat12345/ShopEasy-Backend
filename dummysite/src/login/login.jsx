@@ -13,7 +13,7 @@ const Login = () => {
     setError("");
 
     try {
-      const response = await axios.get("http://localhost:5000/api/getdetails/signupdata", {
+      const response = await axios.get("https://full-stackproject-wk3s.onrender.com/api/getdetails/signupdata", {
         params: { email, password },
   
       });

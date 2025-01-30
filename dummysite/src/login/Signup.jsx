@@ -18,7 +18,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/add/details',
+        'https://full-stackproject-wk3s.onrender.com/api/add/details',
         Userdata,
         { headers: { "Content-Type": "application/json" } }
       );
